@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    width: 250px;
+    border-radius: 70px;
+    background: #3F5EFB;
+background: linear-gradient(126deg, rgba(63, 94, 251, 1) 0%, rgba(157, 82, 180, 1) 50%, rgba(252, 70, 107, 1) 100%);
+}
+.start {
+ color: aliceblue;
+}
+.sum {
+    position: relative;
+    right: 10px;
+    bottom: -3px;
+    font-size: 30px;
+    color: aliceblue;
+}
+.button:hover {
+    transition-duration: 2s;
+    background: #3F5EFB;
+background: linear-gradient(287deg, rgba(63, 94, 251, 1) 0%, rgba(157, 82, 180, 1) 50%, rgba(252, 70, 107, 1) 100%);
+}
+.button:hover .sum {
+    position: relative;
+    left: 10px;
+    animation-name: summ;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes summ {
+    0% {top: 3px;left:0px;}
+    100% {bactop: 3px;left:15px;}
+}

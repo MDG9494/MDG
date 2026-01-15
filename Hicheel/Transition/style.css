@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
+
+
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    border:10px rgb(222, 222, 222) solid ;
+    border-top-color:rgb(10, 190, 255) ;
+    animation: hi 2s infinite
+
+}
+@keyframes hi {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg);}
+}
+.three {
+    height:300px;
+    width: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: 10px solid red;
+    gap: 10px;
+}
+.cube1 {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    animation: cubeone 8s  infinite 0.5s;
+    animation-timing-function: ease;
+
+}
+@keyframes cubeone{
+     0% { transform: rotate(0deg); }
+     25% {transform: rotate(-360deg);}
+     50% { transform: rotate(0deg); }
+   75% { transform: rotate(-360deg);}
+     100% { transform: rotate(0deg); }
+
+}
+.cube2 {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    animation: cubetwo 8s  infinite 0.65s ;
+    animation-timing-function: ease;
+}
+@keyframes cubetwo{
+  0% { transform: rotate(0deg); }
+     25% {transform: rotate(-360deg);}
+     50% { transform: rotate(0deg); }
+   75% { transform: rotate(-360deg);}
+     100% { transform: rotate(0deg); }
+}
+.cube3 {
+    height: 50px;
+    width: 50px;
+    animation: cubethree 8s  infinite 0.8s ;
+    background-color: aqua;
+    animation-timing-function: ease;
+
+}
+@keyframes cubethree{
+   0% { transform: rotate(0deg); }
+     25% {transform: rotate(-360deg);}
+     50% { transform: rotate(0deg); }
+   75% { transform: rotate(-360deg);}
+     100% { transform: rotate(0deg); }
+}

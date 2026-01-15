@@ -1,0 +1,111 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.uul {
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+}
+.uul1 
+{
+    position: relative;
+    top: 330px;
+    left: 250px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 350px solid  rgb(4, 255, 100);
+}
+.uul2 {
+       position: relative;
+    top: 330px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 300px solid rgb(0, 134, 34);
+}
+.uul3 {
+       position: relative;
+    top: 330px;
+    right: 200px;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 450px solid rgb(4, 255, 58);
+    z-index: -10;
+}
+.cloud {
+	width: 350px; height: 120px;
+	
+	background: #ffffff;
+	background: linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #ffffff 100%);
+	background: -moz-linear-gradient(top,  #cce6f4 5%, #cce6f4 100%);
+	background: -ms-linear-gradient(top, #f3faff 5%, #fbfbfb 100%);
+	background: -o-linear-gradient(top, #ffffff 5%, #ffffff 100%);
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	margin: 120px auto 50px;
+    animation:uu ;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: -20;
+    
+    }
+    @keyframes uu 
+    {
+    0%  { right:0px; top: -200px;}
+    50% {right:700px; top: -200px;}
+    100% {right: -1000px; top: -200px;}
+}
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #cce6f4 ;
+ 
+}
+
+.cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+   
+}
+
+.cloud:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+   
+}
+.nar{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: rgb(255, 132, 0);
+    position: absolute;
+    left: 900px;
+    bottom: 500px;
+    animation-name:nar ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    z-index: -100;
+    
+}
+@keyframes nar
+ {
+    0% {left: 800px; top: 600px;}
+    25% {left: 500px; top: 200px;}
+    50% {left: 300px; top: 100px;}
+    75% {left: 0px; top: 0px;}
+    100% {left: -200px; top:10px;}
+}
